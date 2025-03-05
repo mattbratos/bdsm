@@ -88,11 +88,11 @@ const BoxLetter = ({ letter, position, extraSpacing = false }: BoxLetterProps) =
         [1, 1, 1],
       ],
       S: [
-        [0, 1, 1],
+        [1, 1, 1],
         [1, 0, 0],
-        [0, 1, 0],
+        [1, 1, 1],
         [0, 0, 1],
-        [1, 1, 0],
+        [1, 1, 1],
       ],
       D: [
         [1, 1, 0],
@@ -134,7 +134,7 @@ const BoxLetter = ({ letter, position, extraSpacing = false }: BoxLetterProps) =
         [1, 0, 1],
         [1, 0, 1],
         [1, 0, 1],
-        [0, 1, 0],
+        [1, 1, 1],
       ],
       M: [
         [1, 0, 0, 0, 1],
@@ -187,7 +187,7 @@ const Scene = () => {
   }, [])
 
   const renderWord = (word: string, yPosition: number) => {
-    const letterSpacing = 2.5 // Regular spacing between letters
+    const letterSpacing = 3 // Regular spacing between letters
 
     return (
       <group position={[-8, yPosition, 0]}>
