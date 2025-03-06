@@ -1,7 +1,7 @@
-'use client'
+"use client";
 
-import Link from "next/link"
-import { ModeToggle } from "@/components/mode-toggle"
+import Link from "next/link";
+import { ModeToggle } from "@/components/mode-toggle";
 
 export function Navbar() {
   return (
@@ -12,13 +12,22 @@ export function Navbar() {
             <span className="font-bold">Your App</span>
           </Link>
           <nav className="flex items-center space-x-6 text-sm font-medium">
-            <Link href="/about" className="transition-colors hover:text-foreground/80">
+            <Link
+              href="/about"
+              className="transition-colors hover:text-foreground/80"
+            >
               About
             </Link>
-            <Link href="/projects" className="transition-colors hover:text-foreground/80">
+            <Link
+              href="/projects"
+              className="transition-colors hover:text-foreground/80"
+            >
               Projects
             </Link>
-            <Link href="/contact" className="transition-colors hover:text-foreground/80">
+            <Link
+              href="/contact"
+              className="transition-colors hover:text-foreground/80"
+            >
               Contact
             </Link>
           </nav>
@@ -28,5 +37,5 @@ export function Navbar() {
         </div>
       </div>
     </header>
-  )
-} 
+  );
+}
