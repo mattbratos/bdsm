@@ -9,6 +9,7 @@ export default function Home() {
   return (
     <main className="min-h-screen flex flex-col relative">
       <div className="scanlines"></div>
+      <div className="noise"></div>
       <Navbar />
       <Hero />
       <Features />

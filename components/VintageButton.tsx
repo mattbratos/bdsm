@@ -3,7 +3,7 @@ import Link from "next/link"
 
 const VintageButton: React.FC = () => {
   return (
-    <Link href="/" passHref>
+    <Link href="/start" passHref>
       <button
         className="fixed bottom-8 left-1/2 transform -translate-x-1/2 px-6 py-3 bg-black text-white font-bold text-xl 
                    border-4 border-white shadow-lg hover:bg-red-500 
