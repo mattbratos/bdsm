@@ -241,6 +241,7 @@ export default function BG() {
         <Scene />
       </Canvas>
       <VintageButton />
+
       <style jsx global>{`
         @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
       `}</style>
