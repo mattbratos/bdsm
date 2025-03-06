@@ -5,9 +5,6 @@ import { Canvas } from "@react-three/fiber"
 import { useEffect, useRef, useState } from "react"
 import * as THREE from "three"
 
-
-
-
 import VintageButton from "./vintage-button"
 
 const isMobile = () => {
@@ -49,13 +46,11 @@ const BoxWithEdges = ({ position }: BoxWithEdgesProps) => {
 interface BoxLetterProps {
   letter: string;
   position: [number, number, number];
-  extraSpacing?: boolean;
 }
 
 const BoxLetter = ({
   letter,
   position,
-  extraSpacing = false,
 }: BoxLetterProps) => {
   const group = useRef<THREE.Group>(null);
 
@@ -193,7 +188,7 @@ const BoxLetter = ({
 };
 
 const Scene = () => {
-  const orbitControlsRef = useRef<OrbitControlsImpl>(null);
+  const orbitControlsRef = useRef(null);
   const [isMobileDevice, setIsMobileDevice] = useState(false);
 
   useEffect(() => {
@@ -217,7 +212,6 @@ const Scene = () => {
               key={index}
               letter={letter}
               position={[index * spacing, 0, 0]}
-              extraSpacing={false}
             />
           );
         })}
