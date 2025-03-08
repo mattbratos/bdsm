@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
-import { Environment, OrbitControls } from "@react-three/drei"
-import { Canvas } from "@react-three/fiber"
-import { useEffect, useRef, useState } from "react"
-import * as THREE from "three"
+import { Environment, OrbitControls } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import { useEffect, useRef, useState } from "react";
+import * as THREE from "three";
 
-import VintageButton from "./vintage-button"
+import VintageButton from "./vintage-button";
 
 const isMobile = () => {
   if (typeof window === "undefined") return false;
@@ -48,10 +48,7 @@ interface BoxLetterProps {
   position: [number, number, number];
 }
 
-const BoxLetter = ({
-  letter,
-  position,
-}: BoxLetterProps) => {
+const BoxLetter = ({ letter, position }: BoxLetterProps) => {
   const group = useRef<THREE.Group>(null);
 
   const getLetterShape = (letter: string): number[][] => {

@@ -1,30 +1,43 @@
-import "@/styles/globals.css";
-import type { Metadata } from "next";
-import { ThemeProvider } from "@/components/theme-provider";
+import type React from "react"
+import type { Metadata } from "next"
+import { Press_Start_2P, VT323 } from "next/font/google"
+import "./globals.css"
+import { ThemeProvider } from "@/components/theme-provider"
+
+const pixelHeading = Press_Start_2P({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-pixel-heading",
+})
+
+const pixelBody = VT323({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-pixel-body",
+})
 
 export const metadata: Metadata = {
-  title: "v0 App",
-  description: "Created with v0",
-  generator: "v0.dev",
-};
+  title: "BDSM Software | Exceptional UX & AI Solutions",
+  description: "We specialize in providing exceptional User Experiences and implementing AI in your business.",
+    generator: 'v0.dev'
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+      <body className={`${pixelHeading.variable} ${pixelBody.variable} font-pixel-body`}>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           {children}
         </ThemeProvider>
       </body>
     </html>
-  );
+  )
 }
+
+
+
+import './globals.css'

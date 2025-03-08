@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-
 import { useState } from "react"
 import { Mail, Phone, MapPin } from "lucide-react"
 
@@ -26,7 +25,10 @@ export default function Contact() {
   }
 
   return (
-    <div id="contact" className="bg-background py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-24">
+    <div
+      id="contact"
+      className="min-h-screen flex items-center bg-background py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-24"
+    >
       <div className="relative max-w-xl mx-auto">
         <div className="text-center">
           <h2 className="text-2xl font-pixel-heading tracking-tight text-foreground sm:text-3xl">Contact Us</h2>

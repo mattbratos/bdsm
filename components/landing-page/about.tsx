@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div id="about" className="bg-secondary py-16 sm:py-24 grid-pattern">
+    <div id="about" className="min-h-screen flex items-center bg-secondary py-16 sm:py-24 grid-pattern">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
           <div>
@@ -52,6 +52,4 @@ export default function About() {
     </div>
   )
 }
-
-
 
