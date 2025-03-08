@@ -5,6 +5,13 @@ interface MessageItemProps {
   message: Message;
 }
 
+interface CodeProps extends React.HTMLAttributes<HTMLElement> {
+  node?: any;
+  inline?: boolean;
+  className?: string;
+  children?: React.ReactNode;
+}
+
 export function MessageItem({ message }: MessageItemProps) {
   return (
     <div
@@ -51,7 +58,7 @@ export function MessageItem({ message }: MessageItemProps) {
                 {children}
               </blockquote>
             ),
-            code: ({ node, inline, className, children, ...props }) => {
+            code: ({ node, inline, className, children, ...props }: CodeProps) => {
               if (inline) {
                 return (
                   <code
