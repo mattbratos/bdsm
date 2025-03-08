@@ -30,7 +30,7 @@ export default function Navbar() {
               Contact
             </Link>
             <Link
-              href="/siopa"
+              href="/sugar-mommy"
               className="bg-primary text-primary-foreground px-4 py-2 text-sm font-pixel-body pixel-corners"
             >
               Get a Quote

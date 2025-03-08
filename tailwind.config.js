@@ -22,6 +22,7 @@ module.exports = {
         "pixel-body": ["var(--font-pixel-body)"],
       },
       colors: {
+        "bdsm-red": "#FF0000",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

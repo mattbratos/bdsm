@@ -5,6 +5,8 @@ import About from "@/components/landing-page/about";
 import Contact from "@/components/landing-page/contact";
 import Footer from "@/components/footer";
 import AboutAlternatives from "@/components/landing-page/about-alternatives";
+import AboutAlternatives2 from "@/components/landing-page/about-alternatives-2"
+import Manifesto from "@/components/landing-page/manifesto";
 
 export default function Home() {
   return (
@@ -14,8 +16,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Features />
-      <About />
-      <AboutAlternatives />
+      <Manifesto />
       <Contact />
       <Footer />
     </main>
